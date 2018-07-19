@@ -1,0 +1,134 @@
+@media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    div.container-top {
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
+    .name-container {
+        max-width: 50px;
+    }
+
+    .responsive {
+        display: none;
+    }
+
+    nav.top-menu,
+    div.name-container {
+        line-height: 24px;
+    }
+
+    nav.top-menu {
+        align-self: flex-end;
+        margin-left: 100px;
+    }
+
+    div.project-title {
+        margin-top: 100px;
+    }
+
+    .titre-projet {
+        font-size: 40px;
+    }
+
+    .about_container {
+        margin-left: 25px;
+        margin-top: 78%;
+    }
+
+    .nom_gros_about {
+        font-size: 42px;
+    }
+
+    .profil_limit {
+        width: 90%;
+    }
+
+    .center {
+        margin-left: 25px;
+        margin-top: 55%;
+        margin-bottom: 180px;
+    }
+
+    .contact_titre {
+        font-size: 20px;
+    }
+
+    .contact_container {
+        margin-left: 25px;
+        flex-direction: column;
+    }
+
+    .child1 {
+        margin-bottom: 100px;
+    }
+
+    .child2 {
+        margin-bottom: 100px;
+    }
+
+    .child3 {
+        margin-bottom: 100px;
+    }
+
+    .image {
+        width: 80%;
+        height: 500px;
+    }
+
+    .image_travaux1 {
+        width: auto;
+        height: inherit;
+        position: relative;
+        left: -408px;
+    }
+
+    .work_class_container {
+        display: none;
+    }
+
+    .travaux_bottom_responsive {
+        margin-bottom: 250px;
+    }
+
+    .container_description {
+        margin-left: 25px;
+        margin-bottom: 150px;
+    }
+
+    .description_text {
+        width: 80%;
+    }
+
+    .detail_image {
+        display: none;
+    }
+
+    .details_container {
+        width: 95%;
+        margin-bottom: 50px;
+    }
+    .detail_child1 {
+        margin-left: -10px;
+        align-self: flex-end;
+    }
+    .detail_child2 {
+        margin-left: 0px;
+        margin-bottom: 150px;
+    }
+
+    .goback {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1700px) {
+    .image {
+        width: 1000px;
+        height: 500px;
+    }
+}

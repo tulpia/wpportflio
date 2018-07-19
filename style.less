@@ -75,13 +75,16 @@ div.project-title {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;    
 }
 
 .project-container {
     max-width: 50%;
     text-align: center;
-    margin-top: 17%;
-    margin-bottom: 17%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    position: relative;
+    z-index: 3;
 }
 
 .titre-projet {
@@ -90,6 +93,8 @@ div.project-title {
     font-size: 80px;
     text-decoration: none;
 }
+
+
 
 .type-travail {
     margin-left: 120px;
@@ -173,6 +178,7 @@ li {
 .about_container {
     margin-top: 20%;
     margin-left: 24.5%;
+    width: 60%;
 }
 
 .bottom_margin_plus {
@@ -270,9 +276,7 @@ div.container-top-responsive {
     display: none;
 }
 
-.profil_limit {
-    width: 500px;
-}
+
 
 .image_travaux1 {
     width: inherit;
@@ -294,4 +298,25 @@ div.container-top-responsive {
     position: absolute;
     width: 100%;
     height: auto;
+}
+
+
+
+.titre {
+}
+
+.block_accueil_image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 1;
+    width: 80%;
+    height: auto;
+    opacity: 0;
+    text-align: center;
+}
+
+.block_accueil_image__image_container {
+    width: inherit;
 }

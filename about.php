@@ -17,7 +17,7 @@ $fieldsAbout->phrase_de_fin = get_field('about_fin');
     <?php get_header(); ?>
 
     <div class="about_container">
-        <div class="about_left">
+        <div>
             <div class="bottom_margin_plus">
                 <p class="nom_gros_about">
                     <?= $fieldsAbout->nom; ?>

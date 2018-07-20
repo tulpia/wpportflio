@@ -33,7 +33,7 @@ a,
 ul:not(.titre-projet) {
     font-family: Helvetica;
     font-size: 16px;
-    color: black;
+    color: #1F2020;
     margin-bottom: -15px;
 }
 
@@ -75,16 +75,18 @@ div.project-title {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: relative;    
+    position: relative;
+    opacity: 1;
 }
 
 .project-container {
     max-width: 50%;
     text-align: center;
-    margin-top: 15%;
-    margin-bottom: 15%;
+    margin-top: 17%;
+    margin-bottom: 17%;
     position: relative;
     z-index: 3;
+    opacity: 0;
 }
 
 .titre-projet {
@@ -98,10 +100,12 @@ div.project-title {
 
 .type-travail {
     margin-left: 120px;
+    opacity: 0;
 }
 
 .work_class {
     margin-top: 70px;
+    opacity: 0;
 }
 
 .work_class_container {
@@ -168,11 +172,13 @@ li {
 .nom_gros_about {
     font-family: larish;
     font-size: 48px;
+    opacity: 0;
 }
 
 .red_underline {
     color: @red;
     text-decoration: underline;
+    opacity: 0;
 }
 
 .about_container {
@@ -196,6 +202,7 @@ li {
 
 .contact_titre {
     font-size: 24px;
+    opacity: 0;
 }
 
 
@@ -208,9 +215,9 @@ li {
 }
 
 .image {
-    text-align: center; //background-color: grey;
+    text-align: center;
     width: 1400px;
-    height: 600px;
+    height: 600px; //background-color: grey;
     overflow: hidden;
 }
 
@@ -222,6 +229,7 @@ li {
 .container_description {
     margin-left: 24%;
     margin-bottom: 200px;
+    opacity: 0;
 }
 
 .details_container {
@@ -235,12 +243,14 @@ li {
     margin-left: 20%;
     align-self: flex-end;
     margin-bottom: 150px;
+    opacity: 0;
 }
 
 .detail_child2 {
     margin-left: -150px;
     align-self: flex-end;
     margin-bottom: 150px;
+    opacity: 0;
 }
 
 
@@ -250,6 +260,7 @@ li {
     width: 400px;
     background-color: grey;
     overflow: hidden;
+    opacity: 0;
 }
 
 .list_detail {
@@ -281,6 +292,8 @@ div.container-top-responsive {
 .image_travaux1 {
     width: inherit;
     height: auto;
+    position: relative;
+    opacity: 0;
 }
 
 .image_travaux2 {
@@ -302,8 +315,7 @@ div.container-top-responsive {
 
 
 
-.titre {
-}
+.titre {}
 
 .block_accueil_image {
     position: absolute;
@@ -311,7 +323,7 @@ div.container-top-responsive {
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
     z-index: 1;
-    width: 80%;
+    width: 75%;
     height: auto;
     opacity: 0;
     text-align: center;
@@ -319,4 +331,82 @@ div.container-top-responsive {
 
 .block_accueil_image__image_container {
     width: inherit;
+}
+
+
+
+.experience_text {
+    opacity: 0;
+}
+
+.profil_text {
+    opacity: 0;
+}
+
+.phrase_de_fin_about {
+    opacity: 0;
+}
+
+.mail_label {
+    opacity: 0;
+}
+
+.mailto {
+    opacity: 0;
+}
+
+.reseaux_label {
+    opacity: 0;
+}
+
+.location_label {
+    opacity: 0;
+}
+
+.location_full {
+    opacity: 0;
+}
+
+.PageExperimentationsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 17%;
+
+    @media screen and (max-width: 800px) {
+        margin-top: 50%;
+    }
+}
+
+.PageExperimentationsContainer__grandTexteContainer {
+    max-width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 800px) {
+        margin-bottom: 30px;
+    }
+}
+
+.PageExperimentationsContainer__grandTexteContainer__grandTexte {
+    font-size: 48px;
+    opacity: 0;
+
+    @media screen and (max-width: 800px) {
+        font-size: 24px;
+    }
+}
+
+.PageExperimentationsContainer2 {
+    @media screen and (max-width: 800px) {
+        max-width: 70%;
+    }
+}
+
+.PageExperimentations__petitTexteContainer {}
+
+.PageExperimentations__petitTexteContainer__petitTexte {
+    text-align: center;
+    opacity: 0;
 }

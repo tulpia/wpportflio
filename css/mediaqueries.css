@@ -33,6 +33,7 @@
 
     .titre-projet {
         font-size: 40px;
+        color: #1F2020;
     }
 
     .about_container {
@@ -124,11 +125,25 @@
     .goback {
         margin-left: 25px;
     }
+
+    .block_accueil_image {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1700px) {
     .image {
-        width: 1000px;
-        height: 500px;
+        width: 1200px;
+        height: 600px;
+    }
+
+
+    .block_accueil_image {
+        width: 67%;
+    }
+
+    .project-container {
+        margin-top: 16%;
+        margin-top: 16%;
     }
 }

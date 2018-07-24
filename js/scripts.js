@@ -20,13 +20,13 @@ $(document).ready(function () {
         opacity: 1
     }, 400);
 
-    $('.type-travail').delay(500).animate({
+    $('.type-travail, .travaux_date').delay(500).animate({
         opacity: 1
     }, 400);
 
     $('.no_underline').mouseover(function () {
         $('.block_accueil_image').animate({
-            opacity: 0.8
+            opacity: 1
         }, 100);
     });
     $('.no_underline').mouseleave(function () {

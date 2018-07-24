@@ -23,40 +23,47 @@ $travaux = get_posts($args);
         //On va chercher les champs ACF puis on les assigne chaqun à leur ID qui est contenu dans $tr (qui est un objet)
         $fieldsTravaux->categorie = get_field('categorie', $tr->ID);
         $fieldsTravaux->typedetravail = get_field('typedetravail', $tr->ID);
-        $fieldsTravaux->image = get_field('travaux_image', $tr->ID);
+ $fieldsTravaux->image = get_field('travaux_image', $tr->ID);
+        $fieldsTravaux->numero = get_field('travaux_numero_article', $tr->ID);
+        $fieldsTravaux->travauxDate = get_field('travaux_date', $tr->ID);
     ?>
-    <div id="barba-wrapper">
-        <div class="barba-container">
-            <div class="project-title">
-                <div class="project-container">
-                    <a href="<?php echo get_permalink($tr->ID); ?>" class="no_underline">
+    <div class="project-title">
+        <div class="project-container">
+            <a href="<?php echo get_permalink($tr->ID); ?>" class="no_underline">
+                        <span class="travaux__numeroArticle">
+                            <?= $fieldsTravaux->numero; ?>
+                        </span>
                         <p class="titre-projet">
                             <?php echo $tr->post_title; ?>
-
                         </p>
                     </a>
-                    <br>
-                    <div class="work_class_container">
-                        <?php if(!empty($fieldsTravaux->categorie)) { ?>
-                        <p class="work_class">
-                            <?= $fieldsTravaux->categorie; ?>
-                                <?php } ?>
+            <br>
+            <div class="work_class_container">
+                <?php if(!empty($fieldsTravaux->categorie)) { ?>
+                <p class="work_class">
+                    <?= $fieldsTravaux->categorie; ?>
+                        <?php } ?>
+                        <span class="type-travail">
                                 <?php if(!empty($fieldsTravaux->typedetravail)) { ?>
-                                <span class="type-travail"><?= $fieldsTravaux->typedetravail; ?></span>
-                                <?php } ?>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="block_accueil_image">
-                    <?php if(!empty($fieldsTravaux->image['url'])) { ?>
-                    <img src="<?= $fieldsTravaux->image['url']; ?>" alt="<?= $fieldsTravaux->image['alt']; ?>" class="block_accueil_image__image_container" />
-                    <?php } ?>
-                </div>
+                                <?= $fieldsTravaux->typedetravail; ?>
+                        </span>
+                </p>
+                <p class="travaux_date">
+                    <svg height="40" width="135">
+                               <line x1="0" y1="10" x2="20" y2="10" style="stroke:rgb(0,0,0); stroke-width:1" class="line"/>
+                    </svg>
+                    <?= $fieldsTravaux->travauxDate; ?>
+                </p>
+                <?php } ?>
             </div>
         </div>
-    </div>
+        <div class="block_accueil_image">
+            <?php if(!empty($fieldsTravaux->image['url'])) { ?>
+            <img src="<?= $fieldsTravaux->image['url']; ?>" alt="<?= $fieldsTravaux->image['alt']; ?>" class="block_accueil_image__image_container" />
+            <?php } ?>
+        </div>
 
+    </div>
     <?php
     }
     ?>

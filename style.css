@@ -33,9 +33,10 @@ div.container-top {
   display: flex;
   justify-content: space-between;
   margin-left: 35px;
-  margin-top: 45px;
+  margin-top: 35px;
   width: 80%;
   position: static;
+  z-index: 7;
 }
 .top-menu a {
   text-decoration: none;
@@ -63,12 +64,13 @@ div.project-title {
   flex-direction: column;
   position: relative;
   opacity: 1;
+  margin-top: 20px;
 }
 .project-container {
   max-width: 50%;
   text-align: center;
-  margin-top: 17%;
-  margin-bottom: 17%;
+  margin-top: 15%;
+  margin-bottom: 15%;
   position: relative;
   z-index: 3;
   opacity: 0;
@@ -82,10 +84,10 @@ div.project-title {
   margin-bottom: 40px;
 }
 .travaux_date {
-  opacity: 0;
+  opacity: 1;
 }
 .work_class {
-  opacity: 0;
+  opacity: 1;
 }
 .work_class_container {
   align-content: flex-start;
@@ -136,16 +138,17 @@ li {
 }
 .no_underline {
   text-decoration: none;
+  position: relative;
 }
 .nom_gros_about {
   font-family: larish;
   font-size: 48px;
-  opacity: 0;
+  opacity: 1;
 }
 .red_underline {
   color: #ff7272;
   text-decoration: underline;
-  opacity: 0;
+  opacity: 1;
 }
 .about_container {
   margin-top: 20%;
@@ -164,7 +167,7 @@ li {
 }
 .contact_titre {
   font-size: 24px;
-  opacity: 0;
+  opacity: 1;
 }
 .imagecontainer {
   display: flex;
@@ -185,7 +188,7 @@ li {
 .container_description {
   margin-left: 24%;
   margin-bottom: 200px;
-  opacity: 0;
+  opacity: 1;
 }
 .details_container {
   display: flex;
@@ -197,20 +200,20 @@ li {
   margin-left: 20%;
   align-self: flex-end;
   margin-bottom: 150px;
-  opacity: 0;
+  opacity: 1;
 }
 .detail_child2 {
   margin-left: -150px;
   align-self: flex-end;
   margin-bottom: 150px;
-  opacity: 0;
+  opacity: 1;
 }
 .imagedetail {
   height: 800px;
   width: 400px;
   background-color: grey;
   overflow: hidden;
-  opacity: 0;
+  opacity: 1;
 }
 .list_detail {
   line-height: 60px;
@@ -233,7 +236,7 @@ div.container-top-responsive {
   width: inherit;
   height: auto;
   position: relative;
-  opacity: 0;
+  opacity: 1;
 }
 .image_travaux2 {
   height: inherit;
@@ -262,28 +265,28 @@ div.container-top-responsive {
   width: inherit;
 }
 .experience_text {
-  opacity: 0;
+  opacity: 1;
 }
 .profil_text {
-  opacity: 0;
+  opacity: 1;
 }
 .phrase_de_fin_about {
-  opacity: 0;
+  opacity: 1;
 }
 .mail_label {
-  opacity: 0;
+  opacity: 1;
 }
 .mailto {
-  opacity: 0;
+  opacity: 1;
 }
 .reseaux_label {
-  opacity: 0;
+  opacity: 1;
 }
 .location_label {
-  opacity: 0;
+  opacity: 1;
 }
 .location_full {
-  opacity: 0;
+  opacity: 1;
 }
 .PageExperimentationsContainer {
   display: flex;
@@ -309,7 +312,7 @@ div.container-top-responsive {
 }
 .PageExperimentationsContainer__grandTexteContainer__grandTexte {
   font-size: 48px;
-  opacity: 0;
+  opacity: 1;
 }
 @media screen and (max-width: 800px) {
   .PageExperimentationsContainer__grandTexteContainer__grandTexte {
@@ -323,13 +326,13 @@ div.container-top-responsive {
 }
 .PageExperimentations__petitTexteContainer__petitTexte {
   text-align: center;
-  opacity: 0;
+  opacity: 1;
 }
 .travaux__numeroArticle {
   font-size: 12px;
   position: absolute;
-  margin-top: 86px;
-  margin-left: -40px;
+  margin-top: 50px;
+  margin-left: -40vh;
   z-index: 1;
 }
 .type-travail {

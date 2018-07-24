@@ -22,116 +22,112 @@ $fieldsTravaux->numero = get_field('travaux_numero_article');
 
 
     <?php get_header(); ?>
-
-    <div id="barba-wrapper">
-        <div class="barba-container">
-            <div class="project-title">
-                <div class="project-container travaux_bottom_responsive">
-                    <p class="titre-projet">
-                        <?php echo the_title(); ?>
-                    </p>
-                    <br>
-                    <div class="work_class_container">
-                        <?php if(!empty($fieldsTravaux->categorie)) { ?>
-                        <p class="work_class">
-                            <?= $fieldsTravaux->categorie; ?>
-                                <?php } ?>
-                                <span class="type-travail">
+    <div class="barba-container" data-namespace="travaux">
+        <div class="project-title">
+            <div class="project-container travaux_bottom_responsive">
+                <p class="titre-projet">
+                    <?php echo the_title(); ?>
+                </p>
+                <br>
+                <div class="work_class_container">
+                    <?php if(!empty($fieldsTravaux->categorie)) { ?>
+                    <p class="work_class">
+                        <?= $fieldsTravaux->categorie; ?>
+                            <?php } ?>
+                            <span class="type-travail">
                                 <?php if(!empty($fieldsTravaux->typedetravail)) { ?>
                                 <?= $fieldsTravaux->typedetravail; ?>
                                 </span>
-                                <?php } ?>
-                        </p>
-                        <p class="travaux_date">
-                            <svg height="40" width="135">
+                            <?php } ?>
+                    </p>
+                    <p class="travaux_date">
+                        <svg height="40" width="135">
                                <line x1="0" y1="10" x2="20" y2="10" style="stroke:rgb(0,0,0); stroke-width:1" />
                            </svg>
-                            <?= $fieldsTravaux->travauxDate; ?>
-                        </p>
+                        <?= $fieldsTravaux->travauxDate; ?>
+                    </p>
 
-                    </div>
                 </div>
             </div>
-
-            <div class="imagecontainer">
-                <?php if(!empty($fieldsTravaux->image)) { ?>
-                <div class="image">
-                    <img src="<?= $fieldsTravaux->image['url']; ?>" alt="<?= $fieldsTravaux->image['alt']; ?>" class="image_travaux1">
-                </div>
-                <?php } ?>
-            </div>
-
-            <div class="container_description">
-                <?php if(!empty($fieldsTravaux->description)) { ?>
-                <p class="description_text">
-                    <?= $fieldsTravaux->description; ?>
-                </p>
-                <?php } ?>
-            </div>
-
-            <div class="details_container">
-                <div class="detail_child1">
-                    <ul class="list_detail first_item">
-                        <?php if(!empty($fieldsTravaux->role)) { ?>
-                        <li>rôle</li>
-                        <?php } ?>
-                        <?php if(!empty($fieldsTravaux->annee)) { ?>
-                        <li>année</li>
-                        <?php } ?>
-                        <?php if(!empty($fieldsTravaux->objet)) { ?>
-                        <li>objet</li>
-                        <?php } ?>
-                        <?php if(!empty($fieldsTravaux->commanditaire)) { ?>
-                        <li>commanditaire</li>
-                        <?php } ?>
-                        <?php if(!empty($fieldsTravaux->collaboration)) { ?>
-                        <li>collaboration</li>
-                        <?php } ?>
-                    </ul>
-                </div>
-                <div class="detail_child2">
-                    <ul class="list_detail">
-                        <?php if(!empty($fieldsTravaux->role)) { ?>
-                        <li>
-                            <?= $fieldsTravaux->role; ?>
-                        </li>
-                        <?php } ?>
-                        <?php if(!empty($fieldsTravaux->annee)) { ?>
-                        <li>
-                            <?= $fieldsTravaux->annee; ?>
-                        </li>
-                        <?php } ?>
-                        <?php if(!empty($fieldsTravaux->objet)) { ?>
-                        <li>
-                            <?= $fieldsTravaux->objet; ?>
-                        </li>
-                        <?php } ?>
-                        <?php if(!empty($fieldsTravaux->commanditaire)) { ?>
-                        <li>
-                            <?= $fieldsTravaux->commanditaire; ?>
-                        </li>
-                        <?php } ?>
-                        <?php if(!empty($fieldsTravaux->collaboration)) { ?>
-                        <li>
-                            <?= $fieldsTravaux->collaboration; ?>
-                        </li>
-                        <?php } ?>
-                    </ul>
-                </div>
-                <div class="detail_image">
-                    <?php if(!empty($fieldsTravaux->image2)) { ?>
-                    <div class="imagedetail">
-                        <img src="<?= $fieldsTravaux->image2['url']; ?>" alt="<?= $fieldsTravaux->image2['alt']; ?>" class="image_travaux2">
-                    </div>
-                    <?php } ?>
-                </div>
-            </div>
-
-            <div class="goback">
-                <a href="<?php echo home_url(); ?>" class="goback_link">retour</a>
-            </div>
-
         </div>
-    </div>
 
+        <div class="imagecontainer">
+            <?php if(!empty($fieldsTravaux->image)) { ?>
+            <div class="image">
+                <img src="<?= $fieldsTravaux->image['url']; ?>" alt="<?= $fieldsTravaux->image['alt']; ?>" class="image_travaux1">
+            </div>
+            <?php } ?>
+        </div>
+
+        <div class="container_description">
+            <?php if(!empty($fieldsTravaux->description)) { ?>
+            <p class="description_text">
+                <?= $fieldsTravaux->description; ?>
+            </p>
+            <?php } ?>
+        </div>
+
+        <div class="details_container">
+            <div class="detail_child1">
+                <ul class="list_detail first_item">
+                    <?php if(!empty($fieldsTravaux->role)) { ?>
+                    <li>rôle</li>
+                    <?php } ?>
+                    <?php if(!empty($fieldsTravaux->annee)) { ?>
+                    <li>année</li>
+                    <?php } ?>
+                    <?php if(!empty($fieldsTravaux->objet)) { ?>
+                    <li>objet</li>
+                    <?php } ?>
+                    <?php if(!empty($fieldsTravaux->commanditaire)) { ?>
+                    <li>commanditaire</li>
+                    <?php } ?>
+                    <?php if(!empty($fieldsTravaux->collaboration)) { ?>
+                    <li>collaboration</li>
+                    <?php } ?>
+                </ul>
+            </div>
+            <div class="detail_child2">
+                <ul class="list_detail">
+                    <?php if(!empty($fieldsTravaux->role)) { ?>
+                    <li>
+                        <?= $fieldsTravaux->role; ?>
+                    </li>
+                    <?php } ?>
+                    <?php if(!empty($fieldsTravaux->annee)) { ?>
+                    <li>
+                        <?= $fieldsTravaux->annee; ?>
+                    </li>
+                    <?php } ?>
+                    <?php if(!empty($fieldsTravaux->objet)) { ?>
+                    <li>
+                        <?= $fieldsTravaux->objet; ?>
+                    </li>
+                    <?php } ?>
+                    <?php if(!empty($fieldsTravaux->commanditaire)) { ?>
+                    <li>
+                        <?= $fieldsTravaux->commanditaire; ?>
+                    </li>
+                    <?php } ?>
+                    <?php if(!empty($fieldsTravaux->collaboration)) { ?>
+                    <li>
+                        <?= $fieldsTravaux->collaboration; ?>
+                    </li>
+                    <?php } ?>
+                </ul>
+            </div>
+            <div class="detail_image">
+                <?php if(!empty($fieldsTravaux->image2)) { ?>
+                <div class="imagedetail">
+                    <img src="<?= $fieldsTravaux->image2['url']; ?>" alt="<?= $fieldsTravaux->image2['alt']; ?>" class="image_travaux2">
+                </div>
+                <?php } ?>
+            </div>
+        </div>
+
+        <div class="goback">
+            <a href="<?php echo home_url(); ?>" class="goback_link">retour</a>
+        </div>
+
+    </div>
     <?php get_footer(); ?>

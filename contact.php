@@ -12,33 +12,34 @@ $fieldsContact->liste_reseaux = get_field('contact_listereseaux');
 $fieldsContact->malocation = get_field('contact_location');
 ?>
     <?php get_header(); ?>
-
-    <div class="center">
-        <p class="contact_titre">
-            <?= $fieldsContact->phrase_intro; ?>
-        </p>
-    </div>
-
-    <div class="contact_container">
-        <div class="child1">
-            <p class="faded mail_label">mail</p>
-            <p>
-                <a href="mailto:<?= $fieldsContact->lemail; ?>" class="mailto">
-                    <?= $fieldsContact->lemail; ?>
-                </a>
+    <div class="barba-container" data-namespace="contact">
+        <div class="center">
+            <p class="contact_titre">
+                <?= $fieldsContact->phrase_intro; ?>
             </p>
         </div>
-        <div class="child2">
-            <p class="faded reseaux_label">réseaux sociaux</p>
-            <p class="red_underline">
-                <?= $fieldsContact->liste_reseaux; ?>
-            </p>
-        </div>
-        <div class="child3">
-            <p class="faded location_label">location</p>
-            <p class="location_full">
-                <?= $fieldsContact->malocation; ?>
-            </p>
+
+        <div class="contact_container">
+            <div class="child1">
+                <p class="faded mail_label">mail</p>
+                <p>
+                    <a href="mailto:<?= $fieldsContact->lemail; ?>" class="mailto">
+                        <?= $fieldsContact->lemail; ?>
+                    </a>
+                </p>
+            </div>
+            <div class="child2">
+                <p class="faded reseaux_label">réseaux sociaux</p>
+                <p class="red_underline">
+                    <?= $fieldsContact->liste_reseaux; ?>
+                </p>
+            </div>
+            <div class="child3">
+                <p class="faded location_label">location</p>
+                <p class="location_full">
+                    <?= $fieldsContact->malocation; ?>
+                </p>
+            </div>
         </div>
     </div>
     <?php get_footer(); ?>

@@ -50,3 +50,4 @@
             <?php } ?>
         </div>
     </div>
+    <div id="barba-wrapper">

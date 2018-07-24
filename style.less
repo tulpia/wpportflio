@@ -78,7 +78,8 @@ div.project-title {
     flex-direction: column;
     position: relative;
     opacity: 1;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding: auto;
 }
 
 .project-container {
@@ -103,11 +104,11 @@ div.project-title {
 
 
 .travaux_date {
-    opacity: 1;
+    opacity: 0;
 }
 
 .work_class {
-    opacity: 1;
+    opacity: 0;
 }
 
 .work_class_container {
@@ -177,13 +178,18 @@ li {
 .nom_gros_about {
     font-family: larish;
     font-size: 48px;
-    opacity: 1;
+    opacity: 0;
 }
 
-.red_underline {
+.liste_reseaux {
     color: @red;
     text-decoration: underline;
-    opacity: 1;
+    opacity: 0;
+    p {
+        a {
+            color: @red;
+        }
+    }
 }
 
 .about_container {
@@ -207,7 +213,7 @@ li {
 
 .contact_titre {
     font-size: 24px;
-    opacity: 1;
+    opacity: 0;
 }
 
 
@@ -234,7 +240,7 @@ li {
 .container_description {
     margin-left: 24%;
     margin-bottom: 200px;
-    opacity: 1;
+    opacity: 0;
 }
 
 .details_container {
@@ -248,14 +254,14 @@ li {
     margin-left: 20%;
     align-self: flex-end;
     margin-bottom: 150px;
-    opacity: 1;
+    opacity: 0;
 }
 
 .detail_child2 {
     margin-left: -150px;
     align-self: flex-end;
     margin-bottom: 150px;
-    opacity: 1;
+    opacity: 0;
 }
 
 
@@ -265,7 +271,7 @@ li {
     width: 400px;
     background-color: grey;
     overflow: hidden;
-    opacity: 1;
+    opacity: 0;
 }
 
 .list_detail {
@@ -298,7 +304,7 @@ div.container-top-responsive {
     width: inherit;
     height: auto;
     position: relative;
-    opacity: 1;
+    opacity: 0;
 }
 
 .image_travaux2 {
@@ -341,35 +347,35 @@ div.container-top-responsive {
 
 
 .experience_text {
-    opacity: 1;
+    opacity: 0;
 }
 
 .profil_text {
-    opacity: 1;
+    opacity: 0;
 }
 
 .phrase_de_fin_about {
-    opacity: 1;
+    opacity: 0;
 }
 
 .mail_label {
-    opacity: 1;
+    opacity: 0;
 }
 
 .mailto {
-    opacity: 1;
+    opacity: 0;
 }
 
 .reseaux_label {
-    opacity: 1;
+    opacity: 0;
 }
 
 .location_label {
-    opacity: 1;
+    opacity: 0;
 }
 
 .location_full {
-    opacity: 1;
+    opacity: 0;
 }
 
 .PageExperimentationsContainer {
@@ -396,7 +402,7 @@ div.container-top-responsive {
 
 .PageExperimentationsContainer__grandTexteContainer__grandTexte {
     font-size: 48px;
-    opacity: 1;
+    opacity: 0;
 
     @media screen and (max-width: 800px) {
         font-size: 24px;
@@ -413,7 +419,7 @@ div.container-top-responsive {
 
 .PageExperimentations__petitTexteContainer__petitTexte {
     text-align: center;
-    opacity: 1;
+    opacity: 0;
 }
 
 .travaux__numeroArticle {

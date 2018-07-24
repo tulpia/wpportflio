@@ -6,12 +6,11 @@ register_nav_menus(array(
 
 add_theme_support( 'post-thumbnails' );
 
-/**
 function theme_gsap_script() {
     wp_enqueue_script( 'gsap-js', get_template_directory_uri() . '/js/TweenMax.js', array(), false, true );
 }
 add_action( 'wp_enqueue_scripts', 'theme_gsap_script' );
-**/
+
 // include custom jQuery
 function shapeSpace_include_custom_jquery() {
 

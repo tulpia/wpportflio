@@ -24,7 +24,9 @@
     <div class="container-top">
         <div class="name-container">
             <p class="top-menu alecteihotaata">
-                <?php bloginfo('name'); ?>
+                <a href="<?= home_url(); ?>">
+                    <?php bloginfo('name'); ?>
+                </a>
             </p>
         </div>
         <div class="top-menu responsive">

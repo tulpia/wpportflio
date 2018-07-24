@@ -64,7 +64,8 @@ div.project-title {
   flex-direction: column;
   position: relative;
   opacity: 1;
-  margin-top: 20px;
+  margin-top: 10px;
+  padding: auto;
 }
 .project-container {
   max-width: 50%;
@@ -84,10 +85,10 @@ div.project-title {
   margin-bottom: 40px;
 }
 .travaux_date {
-  opacity: 1;
+  opacity: 0;
 }
 .work_class {
-  opacity: 1;
+  opacity: 0;
 }
 .work_class_container {
   align-content: flex-start;
@@ -143,12 +144,15 @@ li {
 .nom_gros_about {
   font-family: larish;
   font-size: 48px;
-  opacity: 1;
+  opacity: 0;
 }
-.red_underline {
+.liste_reseaux {
   color: #ff7272;
   text-decoration: underline;
-  opacity: 1;
+  opacity: 0;
+}
+.liste_reseaux p a {
+  color: #ff7272;
 }
 .about_container {
   margin-top: 20%;
@@ -167,7 +171,7 @@ li {
 }
 .contact_titre {
   font-size: 24px;
-  opacity: 1;
+  opacity: 0;
 }
 .imagecontainer {
   display: flex;
@@ -188,7 +192,7 @@ li {
 .container_description {
   margin-left: 24%;
   margin-bottom: 200px;
-  opacity: 1;
+  opacity: 0;
 }
 .details_container {
   display: flex;
@@ -200,20 +204,20 @@ li {
   margin-left: 20%;
   align-self: flex-end;
   margin-bottom: 150px;
-  opacity: 1;
+  opacity: 0;
 }
 .detail_child2 {
   margin-left: -150px;
   align-self: flex-end;
   margin-bottom: 150px;
-  opacity: 1;
+  opacity: 0;
 }
 .imagedetail {
   height: 800px;
   width: 400px;
   background-color: grey;
   overflow: hidden;
-  opacity: 1;
+  opacity: 0;
 }
 .list_detail {
   line-height: 60px;
@@ -236,7 +240,7 @@ div.container-top-responsive {
   width: inherit;
   height: auto;
   position: relative;
-  opacity: 1;
+  opacity: 0;
 }
 .image_travaux2 {
   height: inherit;
@@ -265,28 +269,28 @@ div.container-top-responsive {
   width: inherit;
 }
 .experience_text {
-  opacity: 1;
+  opacity: 0;
 }
 .profil_text {
-  opacity: 1;
+  opacity: 0;
 }
 .phrase_de_fin_about {
-  opacity: 1;
+  opacity: 0;
 }
 .mail_label {
-  opacity: 1;
+  opacity: 0;
 }
 .mailto {
-  opacity: 1;
+  opacity: 0;
 }
 .reseaux_label {
-  opacity: 1;
+  opacity: 0;
 }
 .location_label {
-  opacity: 1;
+  opacity: 0;
 }
 .location_full {
-  opacity: 1;
+  opacity: 0;
 }
 .PageExperimentationsContainer {
   display: flex;
@@ -312,7 +316,7 @@ div.container-top-responsive {
 }
 .PageExperimentationsContainer__grandTexteContainer__grandTexte {
   font-size: 48px;
-  opacity: 1;
+  opacity: 0;
 }
 @media screen and (max-width: 800px) {
   .PageExperimentationsContainer__grandTexteContainer__grandTexte {
@@ -326,7 +330,7 @@ div.container-top-responsive {
 }
 .PageExperimentations__petitTexteContainer__petitTexte {
   text-align: center;
-  opacity: 1;
+  opacity: 0;
 }
 .travaux__numeroArticle {
   font-size: 12px;

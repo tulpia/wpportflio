@@ -15,31 +15,29 @@ $fieldsAbout->phrase_de_fin = get_field('about_fin');
 
 
     <?php get_header(); ?>
-    <div class="barba-container" data-namespace="about">
-        <div class="about_container">
-            <div>
-                <div class="bottom_margin_plus">
-                    <p class="nom_gros_about">
-                        <?= $fieldsAbout->nom; ?>
-                    </p>
-                </div>
-                <div class="bottom_margin profil_limit profil_text">
-                    <p class="faded">profil</p>
-                    <p>
-                        <?= $fieldsAbout->profil; ?>
-                    </p>
-                </div>
-                <div class="bottom_margin profil_limit experience_text">
-                    <p class="faded">expérience logicielle</p>
-                    <p>
-                        <?= $fieldsAbout->experience; ?>
-                    </p>
-                </div>
-                <div class="bottom_margin profil_limit phrase_de_fin_about">
-                    <p>
-                        <?= $fieldsAbout->phrase_de_fin; ?>
-                    </p>
-                </div>
+    <div class="about_container">
+        <div>
+            <div class="bottom_margin_plus">
+                <p class="nom_gros_about">
+                    <?= $fieldsAbout->nom; ?>
+                </p>
+            </div>
+            <div class="bottom_margin profil_limit profil_text">
+                <p class="faded">profil</p>
+                <p>
+                    <?= $fieldsAbout->profil; ?>
+                </p>
+            </div>
+            <div class="bottom_margin profil_limit experience_text">
+                <p class="faded">expérience logicielle</p>
+                <p>
+                    <?= $fieldsAbout->experience; ?>
+                </p>
+            </div>
+            <div class="bottom_margin profil_limit phrase_de_fin_about">
+                <p>
+                    <?= $fieldsAbout->phrase_de_fin; ?>
+                </p>
             </div>
         </div>
     </div>

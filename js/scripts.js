@@ -1,130 +1,30 @@
-var grosNomAbout = document.getElementsByClassName('nom_gros_about')
-var profil = document.getElementsByClassName('profil_text')
-var experience = document.getElementsByClassName('experience_text')
-var phrasedefin = document.getElementsByClassName('phrase_de_fin_about')
-var maillabel = document.getElementsByClassName('mail_label')
-var mailfull = document.getElementsByClassName('mailto')
-var reseauxlabel = document.getElementsByClassName('reseaux_label')
-var reseauxfull = document.getElementsByClassName('red_underline')
-var locationlabel = document.getElementsByClassName('location_label')
-var locationfull = document.getElementsByClassName('location_full')
-var contactphrase = document.getElementsByClassName('contact_titre')
+var grosNomAbout = document.getElementsByClassName('nom_gros_about');
+var profil = document.getElementsByClassName('profil_text');
+var experience = document.getElementsByClassName('experience_text');
+var phrasedefin = document.getElementsByClassName('phrase_de_fin_about');
+var maillabel = document.getElementsByClassName('mail_label');
+var mailfull = document.getElementsByClassName('mailto');
+var reseauxlabel = document.getElementsByClassName('reseaux_label');
+var reseauxfull = document.getElementsByClassName('liste_reseaux');
+var locationlabel = document.getElementsByClassName('location_label');
+var locationfull = document.getElementsByClassName('location_full');
+var contactphrase = document.getElementsByClassName('contact_titre');
 var experimentationsGrandTexte = document.getElementsByClassName('PageExperimentationsContainer__grandTexteContainer__grandTexte');
 var experimentationsPetitTexte = document.getElementsByClassName('PageExperimentations__petitTexteContainer__petitTexte');
-
-var Homepage = Barba.BaseView.extend({
-    namespace: 'accueil',
-    onEnter: function () {
-        console.log('enter');
-        $('.projet-container').animate({
-            opacity: 1
-        }, 400);
-    },
-    onEnterCompleted: function () {
-        console.log('enterComplete');
-        // The Transition has just finished.
-    },
-    onLeave: function () {
-        console.log('leave');
-        // A new Transition toward a new page has just started.
-    },
-    onLeaveCompleted: function () {
-        // The Container has just been removed from the DOM.
-    }
-});
-
-Homepage.init();
-
-var Travaux = Barba.BaseView.extend({
-    namespace: 'travaux',
-    onEnter: function () {
-        console.log('enter');
-        // The new Container is ready and attached to the DOM.
-    },
-    onEnterCompleted: function () {
-        console.log('enterComplete');
-        // The Transition has just finished.
-    },
-    onLeave: function () {
-        console.log('leave');
-        // A new Transition toward a new page has just started.
-    },
-    onLeaveCompleted: function () {
-        // The Container has just been removed from the DOM.
-    }
-});
-
-Travaux.init();
-
-var About = Barba.BaseView.extend({
-    namespace: 'about',
-    onEnter: function () {
-        console.log('enter');
-        // The new Container is ready and attached to the DOM.
-    },
-    onEnterCompleted: function () {
-        console.log('enterComplete');
-        // The Transition has just finished.
-    },
-    onLeave: function () {
-        console.log('leave');
-        // A new Transition toward a new page has just started.
-    },
-    onLeaveCompleted: function () {
-        // The Container has just been removed from the DOM.
-    }
-});
-
-About.init();
-
-var Contact = Barba.BaseView.extend({
-    namespace: 'contact',
-    onEnter: function () {
-        console.log('enter');
-        // The new Container is ready and attached to the DOM.
-    },
-    onEnterCompleted: function () {
-        console.log('enterComplete');
-        // The Transition has just finished.
-    },
-    onLeave: function () {
-        console.log('leave');
-        // A new Transition toward a new page has just started.
-    },
-    onLeaveCompleted: function () {
-        // The Container has just been removed from the DOM.
-    }
-});
-
-Contact.init();
-
-var Experimentations = Barba.BaseView.extend({
-    namespace: 'experimentations',
-    onEnter: function () {
-        console.log('enter');
-        // The new Container is ready and attached to the DOM.
-    },
-    onEnterCompleted: function () {
-        console.log('enterComplete');
-        // The Transition has just finished.
-    },
-    onLeave: function () {
-        console.log('leave');
-        // A new Transition toward a new page has just started.
-    },
-    onLeaveCompleted: function () {
-        // The Container has just been removed from the DOM.
-    }
-});
-
-Experimentations.init();
 
 (function ($) {
 
     $(document).ready(function () {
-        Barba.Pjax.start();
 
-        $('.projet-container').animate({
+        $('.project-container').animate({
+            opacity: 1
+        }, 400);
+
+        $('.work_class').delay(200).animate({
+            opacity: 1
+        }, 400);
+
+        $('.travaux_date').delay(400).animate({
             opacity: 1
         }, 400);
 

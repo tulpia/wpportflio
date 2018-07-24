@@ -26,16 +26,17 @@ a,
 ul:not(.titre-projet) {
   font-family: Helvetica;
   font-size: 16px;
-  color: black;
+  color: #1F2020;
   margin-bottom: -15px;
 }
 div.container-top {
   display: flex;
   justify-content: space-between;
   margin-left: 35px;
-  margin-top: 45px;
+  margin-top: 35px;
   width: 80%;
   position: static;
+  z-index: 7;
 }
 .top-menu a {
   text-decoration: none;
@@ -61,28 +62,39 @@ div.project-title {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+  opacity: 1;
+  margin-top: 10px;
+  padding: auto;
 }
 .project-container {
   max-width: 50%;
   text-align: center;
-  margin-top: 17%;
-  margin-bottom: 17%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  position: relative;
+  z-index: 3;
+  opacity: 0;
 }
 .titre-projet {
   font-family: Extended;
   text-transform: uppercase;
   font-size: 80px;
   text-decoration: none;
+  z-index: 3;
+  margin-bottom: 40px;
 }
-.type-travail {
-  margin-left: 120px;
+.travaux_date {
+  opacity: 0;
 }
 .work_class {
-  margin-top: 70px;
+  opacity: 0;
 }
 .work_class_container {
-  align-content: center;
-  align-items: center;
+  align-content: flex-start;
+  text-align: left;
+  position: relative;
+  margin-left: 50px;
 }
 .about_grostitre {
   font-family: larish;
@@ -127,18 +139,25 @@ li {
 }
 .no_underline {
   text-decoration: none;
+  position: relative;
 }
 .nom_gros_about {
   font-family: larish;
   font-size: 48px;
+  opacity: 0;
 }
-.red_underline {
+.liste_reseaux {
   color: #ff7272;
   text-decoration: underline;
+  opacity: 0;
+}
+.liste_reseaux p a {
+  color: #ff7272;
 }
 .about_container {
   margin-top: 20%;
   margin-left: 24.5%;
+  width: 60%;
 }
 .bottom_margin_plus {
   margin-bottom: 200px;
@@ -152,6 +171,7 @@ li {
 }
 .contact_titre {
   font-size: 24px;
+  opacity: 0;
 }
 .imagecontainer {
   display: flex;
@@ -172,6 +192,7 @@ li {
 .container_description {
   margin-left: 24%;
   margin-bottom: 200px;
+  opacity: 0;
 }
 .details_container {
   display: flex;
@@ -183,17 +204,20 @@ li {
   margin-left: 20%;
   align-self: flex-end;
   margin-bottom: 150px;
+  opacity: 0;
 }
 .detail_child2 {
   margin-left: -150px;
   align-self: flex-end;
   margin-bottom: 150px;
+  opacity: 0;
 }
 .imagedetail {
   height: 800px;
   width: 400px;
   background-color: grey;
   overflow: hidden;
+  opacity: 0;
 }
 .list_detail {
   line-height: 60px;
@@ -212,12 +236,11 @@ li {
 div.container-top-responsive {
   display: none;
 }
-.profil_limit {
-  width: 500px;
-}
 .image_travaux1 {
   width: inherit;
   height: auto;
+  position: relative;
+  opacity: 0;
 }
 .image_travaux2 {
   height: inherit;
@@ -230,4 +253,103 @@ div.container-top-responsive {
   position: absolute;
   width: 100%;
   height: auto;
+}
+.block_accueil_image {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 1;
+  width: 75%;
+  height: auto;
+  opacity: 0;
+  text-align: center;
+}
+.block_accueil_image__image_container {
+  width: inherit;
+}
+.experience_text {
+  opacity: 0;
+}
+.profil_text {
+  opacity: 0;
+}
+.phrase_de_fin_about {
+  opacity: 0;
+}
+.mail_label {
+  opacity: 0;
+}
+.mailto {
+  opacity: 0;
+}
+.reseaux_label {
+  opacity: 0;
+}
+.location_label {
+  opacity: 0;
+}
+.location_full {
+  opacity: 0;
+}
+.PageExperimentationsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 17%;
+}
+@media screen and (max-width: 800px) {
+  .PageExperimentationsContainer {
+    margin-top: 50%;
+  }
+}
+.PageExperimentationsContainer__grandTexteContainer {
+  max-width: 50%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 800px) {
+  .PageExperimentationsContainer__grandTexteContainer {
+    margin-bottom: 30px;
+  }
+}
+.PageExperimentationsContainer__grandTexteContainer__grandTexte {
+  font-size: 48px;
+  opacity: 0;
+}
+@media screen and (max-width: 800px) {
+  .PageExperimentationsContainer__grandTexteContainer__grandTexte {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .PageExperimentationsContainer2 {
+    max-width: 70%;
+  }
+}
+.PageExperimentations__petitTexteContainer__petitTexte {
+  text-align: center;
+  opacity: 0;
+}
+.travaux__numeroArticle {
+  font-size: 12px;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: -40vh;
+  z-index: 1;
+}
+.type-travail {
+  margin-left: 100px;
+}
+.line {
+  stroke-dasharray: 20;
+  stroke-dashoffset: 20;
+  animation: offset 1s ease forwards;
+  animation-delay: 1s;
+}
+@keyframes offset {
+  to {
+    stroke-dashoffset: 0;
+  }
 }

@@ -24,7 +24,7 @@
 
     nav.top-menu {
         align-self: flex-end;
-        margin-left: 100px;
+        margin-left: 25%;
     }
 
     div.project-title {
@@ -33,6 +33,7 @@
 
     .titre-projet {
         font-size: 40px;
+        color: #1F2020;
     }
 
     .about_container {
@@ -52,6 +53,7 @@
         margin-left: 25px;
         margin-top: 55%;
         margin-bottom: 180px;
+        width: 80%;
     }
 
     .contact_titre {
@@ -124,11 +126,31 @@
     .goback {
         margin-left: 25px;
     }
+
+    .block_accueil_image {
+        display: none;
+    }
+
+    .travaux__numeroArticle {
+        margin-top: 10px;
+        margin-left: 0px;
+        position: relative;
+    }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1700px) {
     .image {
-        width: 1000px;
-        height: 500px;
+        width: 1200px;
+        height: 600px;
+    }
+
+
+    .block_accueil_image {
+        width: 67%;
+    }
+
+    .project-container {
+        margin-top: 16%;
+        margin-top: 16%;
     }
 }

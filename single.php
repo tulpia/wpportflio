@@ -5,6 +5,7 @@
 **/
 $fieldsTravaux = new \StdClass();
 
+
 $fieldsTravaux->image = get_field('travaux_image');
 $fieldsTravaux->description = get_field('travaux_description');
 $fieldsTravaux->role = get_field('travaux_role');
@@ -13,26 +14,38 @@ $fieldsTravaux->objet = get_field('travaux_objet');
 $fieldsTravaux->commanditaire = get_field('travaux_commanditaire');
 $fieldsTravaux->collaboration = get_field('travaux_collaboration');
 $fieldsTravaux->image2 = get_field('travaux_image2');
+$fieldsTravaux->categorie = get_field('categorie');
+$fieldsTravaux->typedetravail = get_field('typedetravail');
+$fieldsTravaux->travauxDate = get_field('travaux_date');
+$fieldsTravaux->numero = get_field('travaux_numero_article');
 ?>
 
 
     <?php get_header(); ?>
-
     <div class="project-title">
         <div class="project-container travaux_bottom_responsive">
             <p class="titre-projet">
-                <?php the_title(); ?>
+                <?php echo the_title(); ?>
             </p>
             <br>
             <div class="work_class_container">
-                <?php if(get_field('categorie')) : ?>
+                <?php if(!empty($fieldsTravaux->categorie)) { ?>
                 <p class="work_class">
-                    <?php the_field('categorie'); ?>
-                    <?php endif; ?>
-                    <?php if(get_field('typedetravail')) : ?>
-                    <span class="type-travail"><?php the_field('typedetravail'); ?></span>
-                    <?php endif; ?>
+                    <?= $fieldsTravaux->categorie; ?>
+                        <?php } ?>
+                        <span class="type-travail">
+                                <?php if(!empty($fieldsTravaux->typedetravail)) { ?>
+                                <?= $fieldsTravaux->typedetravail; ?>
+                                </span>
+                        <?php } ?>
                 </p>
+                <p class="travaux_date">
+                    <svg height="40" width="135">
+                               <line x1="0" y1="10" x2="20" y2="10" style="stroke:rgb(0,0,0); stroke-width:1" />
+                           </svg>
+                    <?= $fieldsTravaux->travauxDate; ?>
+                </p>
+
             </div>
         </div>
     </div>
@@ -114,5 +127,4 @@ $fieldsTravaux->image2 = get_field('travaux_image2');
     <div class="goback">
         <a href="<?php echo home_url(); ?>" class="goback_link">retour</a>
     </div>
-
     <?php get_footer(); ?>

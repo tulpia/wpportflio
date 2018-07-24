@@ -1,8 +1,10 @@
 <!--scripts-->
 
-<script src="js/TweenMax.js"></script>
-<script src="js/scripts.js"></script>
+
+<script src="<?php echo get_template_directory_uri()?>/js/TweenMax.js"></script>
 <?php wp_footer(); ?>
+
+</div>
 </body>
 
 </html>

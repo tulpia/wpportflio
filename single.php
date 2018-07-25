@@ -127,4 +127,13 @@ $fieldsTravaux->numero = get_field('travaux_numero_article');
     <div class="goback">
         <a href="<?php echo home_url(); ?>" class="goback_link">retour</a>
     </div>
+
+    <div class="footer_nextPost">
+        <div class="footer_nextPost_container">
+            <p class="footer_nextPost_container_link">
+                <?= next_post_link('%link', 'prochain projet'); ?>
+            </p>
+        </div>
+    </div>
+
     <?php get_footer(); ?>

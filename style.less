@@ -28,6 +28,10 @@ Description: made by me.
     src: url('fonts/larish_neue_semibold.otf');
 }
 
+body {
+    margin: 0;
+}
+
 p,
 a,
 ul:not(.titre-projet) {
@@ -444,5 +448,29 @@ div.container-top-responsive {
 @keyframes offset {
     to {
         stroke-dashoffset: 0;
+    }
+}
+
+.footer_nextPost {
+    background-color: #f2f2f2;
+    width: 100%;
+    position: relative;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_nextPost_container {
+    position: absolute;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.footer_nextPost_container_link {
+    font-weight: bold;
+    a {
+        text-decoration: none;
+        font-size: 18px;
     }
 }

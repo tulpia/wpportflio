@@ -9,6 +9,9 @@
     </title>
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/mediaqueries.css" />
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon-128x128.png" sizes="128x128">
     <?php wp_head(); ?>
 </head>
 
@@ -52,4 +55,3 @@
             <?php } ?>
         </div>
     </div>
-    <div id="barba-wrapper">

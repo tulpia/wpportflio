@@ -124,10 +124,6 @@ $fieldsTravaux->numero = get_field('travaux_numero_article');
         </div>
     </div>
 
-    <div class="goback">
-        <a href="<?php echo home_url(); ?>" class="goback_link">retour</a>
-    </div>
-
     <div class="footer_nextPost">
         <div class="footer_nextPost_container">
             <p class="footer_nextPost_container_link">

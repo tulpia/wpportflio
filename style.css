@@ -33,12 +33,12 @@ ul:not(.titre-projet) {
   margin-bottom: -15px;
 }
 div.container-top {
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  margin-left: 35px;
-  margin-top: 35px;
+  top: 35px;
+  left: 35px;
   width: 80%;
-  position: static;
   z-index: 7;
 }
 .top-menu a {
@@ -67,14 +67,14 @@ div.project-title {
   flex-direction: column;
   position: relative;
   opacity: 1;
-  margin-top: 10px;
+  margin-top: 100px;
   padding: auto;
 }
 .project-container {
   max-width: 50%;
   text-align: center;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  margin-top: 16%;
+  margin-bottom: 16%;
   position: relative;
   z-index: 3;
   opacity: 0;
@@ -158,7 +158,7 @@ li {
   color: #ff7272;
 }
 .about_container {
-  margin-top: 20%;
+  margin-top: 28%;
   margin-left: 24.5%;
   width: 60%;
 }
@@ -169,7 +169,7 @@ li {
   margin-bottom: 150px;
 }
 .center {
-  margin-top: 16%;
+  margin-top: 24%;
   margin-left: 24.5%;
 }
 .contact_titre {
@@ -193,7 +193,7 @@ li {
   font-size: 18px;
 }
 .container_description {
-  margin-left: 24%;
+  margin-left: 24.5%;
   margin-bottom: 200px;
   opacity: 0;
 }
@@ -227,14 +227,6 @@ li {
 }
 .first_item {
   opacity: 0.2;
-}
-.goback {
-  margin-left: 38%;
-  margin-bottom: 100px;
-}
-.goback_link:hover {
-  text-decoration: underline;
-  color: #ff7272;
 }
 div.container-top-responsive {
   display: none;
@@ -300,7 +292,7 @@ div.container-top-responsive {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 17%;
+  margin-top: 23%;
 }
 @media screen and (max-width: 800px) {
   .PageExperimentationsContainer {
@@ -376,4 +368,14 @@ div.container-top-responsive {
 .footer_nextPost_container_link a {
   text-decoration: none;
   font-size: 18px;
+}
+.logo_fixed_container {
+  position: fixed;
+  margin-top: -100px;
+  width: 50px;
+  height: 50px;
+}
+.logo_image {
+  width: 50px;
+  height: 50px;
 }
